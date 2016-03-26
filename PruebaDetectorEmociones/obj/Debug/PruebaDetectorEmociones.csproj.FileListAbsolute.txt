@@ -1,0 +1,6 @@
+C:\Users\Usuario\Documents\Universidad\Investigación\PruebaDetectorEmociones\PruebaDetectorEmociones\bin\Debug\PruebaDetectorEmociones.exe.config
+C:\Users\Usuario\Documents\Universidad\Investigación\PruebaDetectorEmociones\PruebaDetectorEmociones\bin\Debug\PruebaDetectorEmociones.exe
+C:\Users\Usuario\Documents\Universidad\Investigación\PruebaDetectorEmociones\PruebaDetectorEmociones\bin\Debug\PruebaDetectorEmociones.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\PruebaDetectorEmociones\PruebaDetectorEmociones\obj\Debug\PruebaDetectorEmociones.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Universidad\Investigación\PruebaDetectorEmociones\PruebaDetectorEmociones\obj\Debug\PruebaDetectorEmociones.exe
+C:\Users\Usuario\Documents\Universidad\Investigación\PruebaDetectorEmociones\PruebaDetectorEmociones\obj\Debug\PruebaDetectorEmociones.pdb
