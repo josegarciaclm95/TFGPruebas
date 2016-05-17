@@ -1,0 +1,54 @@
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\EmotionAPI-WPF-Samples.exe.config
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\EmotionAPI-WPF-Samples.exe
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\EmotionAPI-WPF-Samples.pdb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\Microsoft.ProjectOxford.Emotion.dll
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\Newtonsoft.Json.dll
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\SampleUserControlLibrary.dll
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\SampleUserControlLibrary.pdb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\Newtonsoft.Json.xml
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.csproj.EmotionAPI-WPF-Samples.exe.config
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingStreamPage.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingURLPage.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionDetectionUserControl.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\MainWindow.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\App.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples_MarkupCompile.cache
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples_MarkupCompile.lref
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingStreamPage.baml
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingURLPage.baml
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionDetectionUserControl.baml
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\MainWindow.baml
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.g.resources
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI_WPF_Samples.EmotionAPI_WPF_Samples.Properties.Resources.resources
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.exe
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\EmotionAPI-WPF-Samples.exe.config
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.exe
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\EmotionAPI-WPF-Samples.exe
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\EmotionAPI-WPF-Samples.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\Microsoft.ProjectOxford.Emotion.dll
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\SampleUserControlLibrary.dll
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\SampleUserControlLibrary.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.csproj.EmotionAPI-WPF-Samples.exe.config
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingStreamPage.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingURLPage.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionDetectionUserControl.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\App.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples_MarkupCompile.cache
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples_MarkupCompile.lref
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingStreamPage.baml
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\DetectEmotionUsingURLPage.baml
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionDetectionUserControl.baml
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.g.resources
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI_WPF_Samples.EmotionAPI_WPF_Samples.Properties.Resources.resources
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.csproj.GenerateResource.Cache

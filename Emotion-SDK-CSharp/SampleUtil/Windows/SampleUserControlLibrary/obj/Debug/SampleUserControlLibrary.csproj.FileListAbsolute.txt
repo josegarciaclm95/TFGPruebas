@@ -1,0 +1,30 @@
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\bin\Debug\SampleUserControlLibrary.dll
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\bin\Debug\SampleUserControlLibrary.pdb
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControl.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SubscriptionKeyPage.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary_MarkupCompile.cache
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary_MarkupCompile.lref
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControl.baml
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SubscriptionKeyPage.baml
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.g.resources
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.SampleUserControlLibrary.Properties.Resources.resources
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.csproj.GenerateResource.Cache
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.dll
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\bin\Debug\SampleUserControlLibrary.dll
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\bin\Debug\SampleUserControlLibrary.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControl.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SubscriptionKeyPage.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary_MarkupCompile.cache
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary_MarkupCompile.lref
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControl.baml
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SubscriptionKeyPage.baml
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.g.resources
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.SampleUserControlLibrary.Properties.Resources.resources
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.dll
+C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.pdb
