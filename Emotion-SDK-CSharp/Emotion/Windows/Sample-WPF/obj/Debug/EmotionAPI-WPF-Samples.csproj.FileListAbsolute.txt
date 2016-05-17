@@ -52,3 +52,6 @@ C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion
 C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.g.resources
 C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI_WPF_Samples.EmotionAPI_WPF_Samples.Properties.Resources.resources
 C:\Users\Usuario\Documents\Universidad\Investigación\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\bin\Debug\EmotionAPI-WPF-Samples.exe.config
+C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.exe
+C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSharp\Emotion\Windows\Sample-WPF\obj\Debug\EmotionAPI-WPF-Samples.pdb
