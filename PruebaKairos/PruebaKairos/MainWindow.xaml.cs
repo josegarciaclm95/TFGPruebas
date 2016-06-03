@@ -18,6 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace PruebaKairos
 {
@@ -32,7 +33,7 @@ namespace PruebaKairos
             //url.Text = System.IO.Path.GetTempFileName();
         }
 
-        private async void seekImage_Click(object sender, RoutedEventArgs e)
+        private void seekImage_Click(object sender, RoutedEventArgs e)
         {
             //url.Text = "https://api.kairos.com/media?source=http://josemariagarcia.es/certificados/dolor.mp4";
             HttpWebRequest request = WebRequest.Create(new Uri("https://api.kairos.com/media?"+"source="+url.Text)) as HttpWebRequest;
@@ -47,27 +48,36 @@ namespace PruebaKairos
                 StreamReader reader = new StreamReader(resp.GetResponseStream());
                 result = reader.ReadToEnd();
             }
-            dynamic response = JObject.Parse(result);
-            answer.Text = response.id.ToString();
-            System.IO.File.WriteAllText(@"C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\PruebaKairos\PruebaKairos\result.txt", result);
-            System.IO.File.WriteAllText(@"C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\PruebaKairos\PruebaKairos\result2.txt", await recibir(response.id.ToString()));
+            answer.Text = " ";
+            /* foreach(var a in result)
+            {
+                answer.Text = answer.Text + a;
+            }
+            */
+            answer.Text = result;
+            JToken token = JObject.Parse(result);
+            string id = (string)token.SelectToken("id");
+            answer.Text = answer.Text + id;
+            File.WriteAllText(@"C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\PruebaKairos\PruebaKairos\result.txt", result);
+            System.Threading.Thread.Sleep(10000);
+            recibir(id);
         }
-
-        private async Task<string> recibir(string id)
+    
+        private void recibir(string id)
         {
             string result = "";
-            HttpWebRequest request = WebRequest.Create(new Uri("https://api.kairos.com/media/" + "id=" + id)) as HttpWebRequest;
+            HttpWebRequest request = WebRequest.Create(new Uri("https://api.kairos.com/media/" + id)) as HttpWebRequest;
             answer.Text = "https://api.kairos.com/media/" + id;
             request.Headers["app_id"] = "5e84c1f9";
             request.Headers["app_key"] = "7cb50dfd597bfbe4d7aca51c3d467f14";
             request.Method = "GET";
-            request.ContentType = "application/x-www-form-urlencoded";
-            using (HttpWebResponse resp = request.GetResponse() as HttpWebResponse)
-            {
-                StreamReader reader = new StreamReader(resp.GetResponseStream());
-                result = reader.ReadToEnd();
-            }
-            return result;
+
+            HttpWebResponse resp = (HttpWebResponse) request.GetResponse();
+            StreamReader reader = new StreamReader(resp.GetResponseStream());
+            result = reader.ReadToEnd();
+            result = JsonConvert.SerializeObject(result,Formatting.Indented);
+            File.WriteAllText(@"C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\PruebaKairos\PruebaKairos\result2.json", result);
         }
     }
 }
+
