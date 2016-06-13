@@ -44,12 +44,14 @@ namespace PruebaNViso
 
         private void send_request_Click(object sender, RoutedEventArgs e)
         {
-            HttpWebRequest request = WebRequest.Create(new Uri("http://3dfi.nviso.net/api/v1/process/emotion/image/upload/")) as HttpWebRequest;
+            //HttpWebRequest request = WebRequest.Create(new Uri("http://3dfi.nviso.net/api/v1/process/emotion/image/upload/")) as HttpWebRequest;
+            HttpWebRequest request = WebRequest.Create(new Uri("http://3dfi.nviso.net/api/v1/process/emotion/image/url/")) as HttpWebRequest;
             request.Headers["app_id"] = "3dedb029";
             request.Headers["app_key"] = "8225b0d6a06112699941df385e28562f";
-            request.Headers["image"] = imageToBytes(to_scan_photo).ToString();
+            //request.Headers["image"] = imageToBytes(to_scan_photo).ToString();
+            request.Headers["url"] = "http://josemariagarcia.es/img/DSCF5869.JPG";
             request.Headers["consent"] = "1";
-            request.Method = "POST";
+            request.Method = "GET";
             //request.ContentType = "application/x-www-form-urlencoded";
             var result = "";
             try
