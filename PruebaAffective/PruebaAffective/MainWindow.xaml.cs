@@ -67,13 +67,13 @@ namespace PruebaAffective
             choosen_picture.Source = new BitmapImage(new Uri(image_source.Text,UriKind.Absolute));
             
             PhotoDetector detector = new PhotoDetector();
-           /* detector.setLicensePath("C:\\Users\\Usuario\\Dropbox\\TRABAJO FIN DE GRADO - INVESTIGACION\\Investigacion_Horizontal\\Affectiva\\sdk_garciagarciajosemaria@outlook.es.license");
+            detector.setLicensePath("C:\\Users\\Usuario\\Dropbox\\TRABAJO FIN DE GRADO - INVESTIGACION\\Investigacion_Horizontal\\Affectiva\\sdk_garciagarciajosemaria@outlook.es.license");
             detector.setClassifierPath("C:\\Program Files\\Affectiva\\Affdex SDK\\data");
             detector.setFaceListener(this);
             detector.setImageListener(this);
             detector.setProcessStatusListener(this);
             detector.setDetectAllEmotions(true);
-            detector.start();*/
+            detector.start();
         }
     }
 
