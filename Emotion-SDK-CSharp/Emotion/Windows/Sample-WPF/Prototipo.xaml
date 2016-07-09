@@ -1,0 +1,53 @@
+﻿<Window x:Class="EmotionAPI_WPF_Samples.Prototipo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:cam="clr-namespace:WebcamControl;assembly=WebcamControl" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmotionAPI_WPF_Samples"
+        mc:Ignorable="d"
+        Title="Prototipo" Height="653.847" Width="861.539">
+    <Window.Resources>
+        <DataTemplate x:Key="DevicesListTemplate">
+            <TextBlock Text="{Binding Name}"/>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid Margin="0,26,15,14">
+
+        <cam:Webcam Name="WebcamCtrl" Margin="41,106,385,233" Panel.ZIndex="20" />
+
+        <StackPanel Margin="0,5,0,0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="22">
+                <TextBlock Height="22" Width="78" HorizontalAlignment="Left" VerticalAlignment="Top"
+                           Text="Video Device" TextAlignment="Left" FlowDirection="LeftToRight" />
+                <ComboBox Height="22" Width="210" HorizontalAlignment="Left" VerticalAlignment="Top"
+                          x:Name="VideoDevicesComboBox" ItemTemplate="{StaticResource DevicesListTemplate}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="23" Margin="0,10,0,0">
+                <TextBlock Height="22" Width="78" HorizontalAlignment="Left" VerticalAlignment="Top"
+                           Text="Audio Device" TextAlignment="Left" FlowDirection="LeftToRight"/>
+                <ComboBox HorizontalAlignment="Left" Height="23" Width="210" VerticalAlignment="Bottom"
+                          x:Name="AudioDevicesComboBox" ItemTemplate="{StaticResource DevicesListTemplate}"/>
+            </StackPanel>
+        </StackPanel>
+
+
+        <Button Content="Start Recording" Height="24" Width="115" Margin="661,10,0,0" HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" x:Name="StartRecordingButton" Click="StartRecordingButton_Click"/>
+        <Button Content="Stop Recording" Height="24" Width="112" Margin="0,158,66,0" HorizontalAlignment="Right" 
+                    VerticalAlignment="Top" x:Name="StopRecordingButton" Click="StopRecordingButton_Click"/>
+        <Button Content="Stop Capture" Height="24" Width="112" HorizontalAlignment="Right" 
+                    VerticalAlignment="Top" x:Name="StopCaptureButton" Click="StopCaptureButton_Click" Margin="0,106,66,0"/>
+        <Button Content="Start Capture" Height="24" Width="115" HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" x:Name="StartCaptureButton" Click="StartCaptureButton_Click" Margin="661,208,0,0"/>
+        <Button Content="Take Snapshot" Height="24" Width="112" Margin="0,59,66,0" HorizontalAlignment="Right" 
+                    VerticalAlignment="Top" x:Name="TakeSnapshotButton" Click="TakeSnapshotButton_Click"/>
+        <Button Content="Analyse Feelings" Height="24" Width="112" Margin="661,251,0,0" HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" x:Name="AnalyseFeeling" Click="AnalyseFeeling_Click"/>
+        <TextBox x:Name="results" HorizontalAlignment="Left" Margin="10,381,0,0"  Text="Resultados" VerticalAlignment="Top" Height="218" Width="819"
+        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>
