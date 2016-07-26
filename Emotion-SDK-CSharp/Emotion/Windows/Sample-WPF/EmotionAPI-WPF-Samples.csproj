@@ -94,6 +94,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="EmotionAnalysis.cs" />
     <Compile Include="Prototipo.xaml.cs">
       <DependentUpon>Prototipo.xaml</DependentUpon>
     </Compile>

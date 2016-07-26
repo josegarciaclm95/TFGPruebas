@@ -16,6 +16,7 @@ using WebcamControl;
 using System.IO;
 using Microsoft.ProjectOxford.Emotion;
 using Microsoft.ProjectOxford.Emotion.Contract;
+using System.Net.Http;
 
 namespace EmotionAPI_WPF_Samples
 {
@@ -111,47 +112,82 @@ namespace EmotionAPI_WPF_Samples
         private async void AnalyseFeeling_Click(object sender, RoutedEventArgs e)
         {
             string image_url = "";
-            DirectoryInfo di = new DirectoryInfo(imagePath);
-            foreach (var file in di.GetFiles())
-            {
-                if (file.Name.Contains("Snap"))
-                {
-                    results.Text += file.Name + " borrado\n";
-                    file.Delete();
-                }
-            }
+            clean_Directory();
             WebcamCtrl.TakeSnapshot();
+            Emotion[] emotionResult = null;
+            image_url = lookFor_Snap();
+            emotionResult = await lookFor_Emotions(image_url);
+            log_Emotions(emotionResult);
+        }
+
+        private async Task<Emotion[]> lookFor_Emotions(string image_url)
+        {
+            Emotion[] emotionResult = null;
             EmotionServiceClient emotionServiceClient = new EmotionServiceClient(key);
-            Emotion[] emotionResult;
-            foreach (var file in di.GetFiles())
-            {
-                if (file.Name.Contains("Snap"))
-                {
-                    results.Text += file.Name + " detectada\n";
-                    image_url = file.FullName;
-                    results.Text += image_url + "\n";
-                }
-            }
             using (Stream imageFileStream = File.OpenRead(image_url))
             {
-                //
                 // Detect the emotions in the URL
                 // Pasamos el flujo de bytes que es la imagen al servicio Recognize y nos devuelve una lista de emotionResults
-                emotionResult = await emotionServiceClient.RecognizeAsync(imageFileStream);
+                try
+                {
+                    emotionResult = await emotionServiceClient.RecognizeAsync(imageFileStream);
+                    results.Text += "He devuelto algo :/\n";
+                    return emotionResult;
+                }
+                catch (HttpRequestException)
+                {
+                    results.Text += "Ups...problemas con la red\n";
+                }
+                catch (IOException)
+                {
+                    results.Text += "No hay cara que analizar :/\n";
+                }
             }
-            foreach(var emoti in emotionResult)
+            return emotionResult;
+        }
+
+        private void log_Emotions(Emotion[] emotionResult)
+        {
+            results.Text += "He llegado aqui\n";
+            if (emotionResult != null && emotionResult.Length >= 1)
             {
-                results.Text += "Happiness: " + emoti.Scores.Happiness.ToString() + "\n";
-                results.Text += "Fear: " + emoti.Scores.Fear.ToString() + "\n";
-                results.Text += "Surprise: " + emoti.Scores.Surprise.ToString() + "\n";
-                results.Text += "Contempt: " + emoti.Scores.Contempt.ToString() + "\n";
-                results.Text += "Sadness: " + emoti.Scores.Sadness.ToString() + "\n";
-                results.Text += "Neutral: " + emoti.Scores.Neutral.ToString() + "\n";
-                results.Text += "Disgust: " + emoti.Scores.Disgust.ToString() + "\n";
-                results.Text += "Anger: " + emoti.Scores.Anger.ToString() + "\n";
+                foreach (var emoti in emotionResult)
+                {
+                    results.Text += "Happiness: " + emoti.Scores.Happiness.ToString() + "\n";
+                    results.Text += "Fear: " + emoti.Scores.Fear.ToString() + "\n";
+                    results.Text += "Surprise: " + emoti.Scores.Surprise.ToString() + "\n";
+                    results.Text += "Contempt: " + emoti.Scores.Contempt.ToString() + "\n";
+                    results.Text += "Sadness: " + emoti.Scores.Sadness.ToString() + "\n";
+                    results.Text += "Neutral: " + emoti.Scores.Neutral.ToString() + "\n";
+                    results.Text += "Disgust: " + emoti.Scores.Disgust.ToString() + "\n";
+                    results.Text += "Anger: " + emoti.Scores.Anger.ToString() + "\n";
+                }
+            } else
+            {
+                results.Text += "Ups...vacio el result";
             }
-            
-            
+        }
+
+        private void clean_Directory()
+        {
+            DirectoryInfo di = new DirectoryInfo(imagePath);
+            foreach (var file in di.GetFiles("Snap*"))
+            {
+                results.Text += file.Name + " borrado\n";
+                file.Delete();
+            }
+        }
+
+        private string lookFor_Snap()
+        {
+            DirectoryInfo di = new DirectoryInfo(imagePath);
+            foreach (var file in di.GetFiles("Snap*"))
+            {
+                results.Text += file.Name + " detectada\n";
+                results.Text += file.FullName + "\n";
+                return file.FullName;
+            }
+            return "";
         }
     }
 }
