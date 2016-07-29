@@ -95,6 +95,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="EmotionAnalysis.cs" />
+    <Compile Include="MyEmotions\Anger.cs" />
+    <Compile Include="MyEmotions\Contempt.cs" />
+    <Compile Include="MyEmotions\Disgust.cs" />
+    <Compile Include="MyEmotions\Fear.cs" />
+    <Compile Include="MyEmotions\Neutral.cs" />
+    <Compile Include="MyEmotions\Sadness.cs" />
+    <Compile Include="MyEmotions\Surprise.cs" />
+    <Compile Include="MyEmotions\_Emotion.cs" />
+    <Compile Include="MyEmotions\Happiness.cs" />
     <Compile Include="Prototipo.xaml.cs">
       <DependentUpon>Prototipo.xaml</DependentUpon>
     </Compile>

@@ -17,6 +17,7 @@ using System.IO;
 using Microsoft.ProjectOxford.Emotion;
 using Microsoft.ProjectOxford.Emotion.Contract;
 using System.Net.Http;
+using EmotionAPI_WPF_Samples.MyEmotions;
 
 namespace EmotionAPI_WPF_Samples
 {
@@ -32,7 +33,8 @@ namespace EmotionAPI_WPF_Samples
         public Prototipo()
         {
             InitializeComponent();
-            
+            _Emotion ab = new Happiness(0.5);
+            results.Text += ab.ToString();
             Binding binding_1 = new Binding("SelectedValue");
             binding_1.Source = VideoDevicesComboBox;
             WebcamCtrl.SetBinding(Webcam.VideoDeviceProperty, binding_1);
