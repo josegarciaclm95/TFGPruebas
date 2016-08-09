@@ -8,18 +8,34 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
 {
     class Happiness : _Emotion
     {
-        public Happiness(double score):base("Happiness",score)
+        public Happiness(float score):base("Happiness",score)
         {
         }
 
-        public override string compare_emotions(_Emotion emotion)
+        public new string compare_emotions(_Emotion emotion)
         {
-            throw new NotImplementedException();
+            string[] ems = { "Anger" };
+            if (ems.Any(l => l == emotion.Name))
+            {
+                return "Not real happiness. Probably pain, careful";
+            }
+            else
+            {
+                return "Happiness";
+            }
         }
 
-        public override string compare_emotions(_Emotion emotion1, _Emotion emotion2)
+        public new string compare_emotions(_Emotion emotion1, _Emotion emotion2)
         {
-            throw new NotImplementedException();
+            string[] ems = { "Sadness", "Anger" };
+            if (ems.Any(l => l == emotion1.Name) || ems.Any(l => l == emotion2.Name))
+            {
+                return "Not real happiness. Probably pain, careful";
+            }
+            else
+            {
+                return "Happiness, " + emotion1.Name + " and " + emotion2.Name;
+            }
         }
     }
 }

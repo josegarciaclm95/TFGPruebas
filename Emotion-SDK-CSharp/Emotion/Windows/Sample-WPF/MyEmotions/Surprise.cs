@@ -8,18 +8,10 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
 {
     class Surprise:_Emotion
     {
-        public Surprise(double score) : base("Surprise", score)
+        public Surprise(float score) : base("Surprise", score)
         {
         }
 
-        public override string compare_emotions(_Emotion emotion)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string compare_emotions(_Emotion emotion1, _Emotion emotion2)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

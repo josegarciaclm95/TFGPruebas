@@ -8,18 +8,26 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
 {
     class Neutral:_Emotion
     {
-        public Neutral(double score) : base("Neutral", score)
+        public Neutral(float score) : base("Neutral", score)
         {
         }
 
-        public override string compare_emotions(_Emotion emotion)
+        public new string compare_emotions(_Emotion emotion)
         {
-            throw new NotImplementedException();
+            return "Neutral and " + emotion.Name;
         }
 
-        public override string compare_emotions(_Emotion emotion1, _Emotion emotion2)
+        public new string compare_emotions(_Emotion emotion1, _Emotion emotion2)
         {
-            throw new NotImplementedException();
+            string[] ems = { "Disgust", "Sadness"};
+            if (ems.Any(l => l == emotion1.Name) || ems.Any(l => l == emotion2.Name))
+            {
+                return "Patient deteriorating. Soften activity";
+            }
+            else
+            {
+                return "Neutral, " + emotion1.Name + " and " + emotion2.Name;
+            }
         }
     }
 }

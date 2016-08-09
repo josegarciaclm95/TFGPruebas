@@ -33,8 +33,6 @@ namespace EmotionAPI_WPF_Samples
         public Prototipo()
         {
             InitializeComponent();
-            _Emotion ab = new Happiness(0.5);
-            results.Text += ab.ToString();
             Binding binding_1 = new Binding("SelectedValue");
             binding_1.Source = VideoDevicesComboBox;
             WebcamCtrl.SetBinding(Webcam.VideoDeviceProperty, binding_1);
@@ -113,15 +111,67 @@ namespace EmotionAPI_WPF_Samples
 
         private async void AnalyseFeeling_Click(object sender, RoutedEventArgs e)
         {
-            string image_url = "";
-            clean_Directory();
-            WebcamCtrl.TakeSnapshot();
-            Emotion[] emotionResult = null;
-            image_url = lookFor_Snap();
-            emotionResult = await lookFor_Emotions(image_url);
-            log_Emotions(emotionResult);
+            for(int i = 0; i < 3; i++)
+            {
+                string image_url = "";
+                clean_Directory();
+                WebcamCtrl.TakeSnapshot();
+                Emotion[] emotionResult = null;
+                List<_Emotion> _emotionResult = null;
+                image_url = lookFor_Snap();
+                emotionResult = await lookFor_Emotions(image_url);
+                _emotionResult = adapt_To_MyEmotions(emotionResult);
+                //Sort expect a comparison that returns an int
+                //OrderBy does not sort the original list, but return a new sorted one
+                _emotionResult.Sort((em1, em2) => em2.Score.CompareTo(em1.Score));
+                //log_Emotions(emotionResult);
+                log_MyEmotions(_emotionResult);
+                results.Text += study_emotions(_emotionResult);
+                System.Threading.Thread.Sleep(3000);
+            }
         }
 
+        private List<_Emotion> adapt_To_MyEmotions(Emotion[] emotionResult)
+        {
+            List<_Emotion> result = new List<_Emotion>();
+            EmotionsFactory factory = new EmotionsFactory();
+            if (emotionResult != null && emotionResult.Length >= 1)
+            {
+                foreach (var emoti in emotionResult)
+                {
+                    result.Add(factory.MakeEmotion("Anger", emoti.Scores.Anger));
+                    result.Add(factory.MakeEmotion("Contempt", emoti.Scores.Contempt));
+                    result.Add(factory.MakeEmotion("Disgust", emoti.Scores.Disgust));
+                    result.Add(factory.MakeEmotion("Fear", emoti.Scores.Fear));
+                    result.Add(factory.MakeEmotion("Happiness", emoti.Scores.Happiness));
+                    result.Add(factory.MakeEmotion("Neutral", emoti.Scores.Neutral));
+                    result.Add(factory.MakeEmotion("Sadness", emoti.Scores.Sadness));
+                    result.Add(factory.MakeEmotion("Surprise", emoti.Scores.Surprise));
+                }
+            }
+            return result;
+        }
+
+        private string study_emotions(List<_Emotion> results)
+        {
+            var first = results.First();
+            if (first.Score > 0.9)
+            {
+                return first.Name;
+            }
+            else if (first.Score > 0.55 && first.Score <= 0.9)
+            {
+                return first.compare_emotions(results.ElementAt(1));
+            }
+            else if (first.Score > 0.3 && first.Score <= 0.55)
+            {
+                return first.compare_emotions(results.ElementAt(1), results.ElementAt(2));
+            }
+            else
+            {
+                return "Unclear results";
+            }
+        }
         private async Task<Emotion[]> lookFor_Emotions(string image_url)
         {
             Emotion[] emotionResult = null;
@@ -150,7 +200,6 @@ namespace EmotionAPI_WPF_Samples
 
         private void log_Emotions(Emotion[] emotionResult)
         {
-            results.Text += "He llegado aqui\n";
             if (emotionResult != null && emotionResult.Length >= 1)
             {
                 foreach (var emoti in emotionResult)
@@ -165,6 +214,21 @@ namespace EmotionAPI_WPF_Samples
                     results.Text += "Anger: " + emoti.Scores.Anger.ToString() + "\n";
                 }
             } else
+            {
+                results.Text += "Ups...vacio el result";
+            }
+        }
+
+        private void log_MyEmotions(List<_Emotion> emotionResult)
+        {
+            if (emotionResult != null && emotionResult.Count >= 1)
+            {
+                foreach (var emoti in emotionResult.Take(3))
+                {
+                    results.Text += emoti.Name + " " + emoti.Score.ToString() + "\n";
+                }
+            }
+            else
             {
                 results.Text += "Ups...vacio el result";
             }

@@ -8,10 +8,10 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
 {
     abstract class _Emotion
     {
-        public string name;
-        public double score;
+        private string name;
+        private float score;
 
-        public _Emotion(string name, double score)
+        public _Emotion(string name, float score)
         {
             this.name = name;
             this.score = score;
@@ -22,9 +22,15 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
             return name + ", Score =  " + score;
         }
 
-        public abstract string compare_emotions(_Emotion emotion);
+        public string compare_emotions(_Emotion emotion)
+        {
+            return "A mix of " + this.Name + " and " + emotion.Name;
+        }
 
-        public abstract string compare_emotions(_Emotion emotion1, _Emotion emotion2);
+        public string compare_emotions(_Emotion emotion1, _Emotion emotion2)
+        {
+            return "A mix of " + this.Name + " and " + emotion1.Name + " and " + emotion2.Name;
+        }
 
         public string Name
         {
@@ -38,7 +44,7 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
             }
         }
 
-        public double Score
+        public float Score
         {
             get
             {

@@ -13,6 +13,8 @@ namespace PruebaDetectorEmociones
             Console.Write("Hola mundo");
             string ContenidoFichero = System.IO.File.ReadAllText("TextoPrueba.txt");
             Console.Read();
+            
+
         }
     }
 }

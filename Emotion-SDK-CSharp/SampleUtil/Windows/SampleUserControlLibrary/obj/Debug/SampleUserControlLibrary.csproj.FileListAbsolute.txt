@@ -42,3 +42,4 @@ C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSh
 C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.csproj.GenerateResource.Cache
 C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.dll
 C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.pdb
+C:\Users\Usuario\Documents\Universidad\Investigación\pruebasTFG\Emotion-SDK-CSharp\SampleUtil\Windows\SampleUserControlLibrary\obj\Debug\SampleUserControlLibrary.csprojResolveAssemblyReference.cache

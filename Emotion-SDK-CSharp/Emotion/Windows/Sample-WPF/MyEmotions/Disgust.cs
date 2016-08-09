@@ -8,18 +8,32 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
 {
     class Disgust:_Emotion
     {
-        public Disgust(double score) : base("Disgust", score)
+        public Disgust(float score) : base("Disgust", score)
         {
         }
 
-        public override string compare_emotions(_Emotion emotion)
+        public new string compare_emotions(_Emotion emotion)
         {
-            throw new NotImplementedException();
+            if (emotion.Name == "Sadness")
+            {
+                return "Pain. Abort activity";
+            }
+            else
+            {
+                return "Disgust and " + emotion.Name;
+            }
         }
-
-        public override string compare_emotions(_Emotion emotion1, _Emotion emotion2)
+        public new string compare_emotions(_Emotion emotion1, _Emotion emotion2)
         {
-            throw new NotImplementedException();
+            string[] ems = { "Contempt", "Sadness" };
+            if (ems.Any(l => l == emotion1.Name) || ems.Any(l => l == emotion2.Name))
+            {
+                return "Pain. Abort activity";
+            }
+            else
+            {
+                return "Disgust, " + emotion1.Name + " and " + emotion2.Name;
+            }
         }
     }
 }

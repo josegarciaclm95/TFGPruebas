@@ -19,10 +19,16 @@ namespace PruebasGenericas
             b("Hola mundo");
             pruebaDelegate c = delegate (string name) { Console.WriteLine(name); };
             c("Hola mundo");
+            Padre x = new Padre();
+            Hija1 y = new Hija1();
+            Hija2 z = new Hija2();
+            Console.WriteLine(x.imprimir());
+            Console.WriteLine(y.imprimir());
+            Console.WriteLine(z.imprimir());
             Console.ReadLine();
         }
 
-    
+
     }
 
     class Prueba1
@@ -32,4 +38,26 @@ namespace PruebasGenericas
             Console.WriteLine(a_imprimir);
         }
     }
+
+    class Padre
+    {
+        public string imprimir()
+        {
+            return "Imprime el padre";
+        }
+    }
+
+    class Hija1 : Padre
+    {
+
+    }
+
+    class Hija2:Padre
+    {
+        public new string imprimir()
+        {
+            return "Imprime la hija en su propio imprimir";
+        }
+    }
+
 }
