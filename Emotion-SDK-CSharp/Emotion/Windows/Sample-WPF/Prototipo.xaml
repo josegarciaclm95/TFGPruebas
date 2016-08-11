@@ -21,11 +21,11 @@
         <cam:Webcam Name="WebcamCtrl"  Panel.ZIndex="20" HorizontalAlignment="Left" Width="414" Height="350" Margin="20,176,0,0"/>
         <TextBlock Height="22" Width="78"  HorizontalAlignment="Left" VerticalAlignment="Top"
                            Text="Video Device" TextAlignment="Left" FlowDirection="LeftToRight" Margin="182,97,0,0" />
-        <ComboBox Height="30" Width="210" HorizontalAlignment="Left" VerticalAlignment="Top"
+        <ComboBox Height="30" Width="260" HorizontalAlignment="Left" VerticalAlignment="Top"
                           x:Name="VideoDevicesComboBox" ItemTemplate="{StaticResource DevicesListTemplate}" Margin="291,89,0,0"/>
         <TextBlock Height="22" Width="78"  HorizontalAlignment="Left" VerticalAlignment="Top"
                    Text="Audio Device" TextAlignment="Left" FlowDirection="LeftToRight" Margin="182,37,0,0"/>
-        <ComboBox HorizontalAlignment="Left" Height="30" Width="210" VerticalAlignment="Top"
+        <ComboBox HorizontalAlignment="Left" Height="30" Width="260" VerticalAlignment="Top"
                   x:Name="AudioDevicesComboBox" ItemTemplate="{StaticResource DevicesListTemplate}" Margin="291,29,0,0"/>
         <Grid Height="Auto" Width="Auto">
             <Button Content="Start Recording"  x:Name="StartRecordingButton" Click="StartRecordingButton_Click" Margin="605,0,198,574"/>
