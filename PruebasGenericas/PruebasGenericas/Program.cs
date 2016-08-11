@@ -12,6 +12,10 @@ namespace PruebasGenericas
 
         static void Main(string[] args)
         {
+
+            Program2.pruebaStringToJson();
+            Program2.pruebaBuildJson();
+            /*
             pruebaDelegate p = name => { Console.WriteLine(name); };
             p("Hola mundo");
             Prueba1 a = new Prueba1();
@@ -26,6 +30,8 @@ namespace PruebasGenericas
             Console.WriteLine(y.imprimir());
             Console.WriteLine(z.imprimir());
             Console.ReadLine();
+            */
+
         }
 
 

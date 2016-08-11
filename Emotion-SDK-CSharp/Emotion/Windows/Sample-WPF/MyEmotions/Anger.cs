@@ -12,7 +12,20 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
         {
         }
 
-        public new string compare_emotions(_Emotion emotion1, _Emotion emotion2)
+        public override string compare_emotions(_Emotion emotion)
+        {
+            string[] ems = { "Disgust", "Sadness" };
+            if (ems.Any(l => l == emotion.Name))
+            {
+                return "Pain. Abort activity";
+            }
+            else
+            {
+                return "Anger, " + emotion.Name;
+            }
+        }
+
+        public override string compare_emotions(_Emotion emotion1, _Emotion emotion2)
         {
             string[] ems = {"Disgust","Sadness","Anger" };
             if (ems.Any(l => l == emotion1.Name) || ems.Any(l => l == emotion2.Name))

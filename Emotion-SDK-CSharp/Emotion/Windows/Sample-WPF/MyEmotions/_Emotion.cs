@@ -22,12 +22,12 @@ namespace EmotionAPI_WPF_Samples.MyEmotions
             return name + ", Score =  " + score;
         }
 
-        public string compare_emotions(_Emotion emotion)
+        public virtual string compare_emotions(_Emotion emotion)
         {
             return "A mix of " + this.Name + " and " + emotion.Name;
         }
 
-        public string compare_emotions(_Emotion emotion1, _Emotion emotion2)
+        public virtual string compare_emotions(_Emotion emotion1, _Emotion emotion2)
         {
             return "A mix of " + this.Name + " and " + emotion1.Name + " and " + emotion2.Name;
         }

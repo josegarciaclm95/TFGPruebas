@@ -1,0 +1,23 @@
+{"forma":"hexagonal",
+"puertas":[
+    [1,"Norte",2,"Sur"]
+  ],
+"laberinto":[
+    {"tipo":"habitacion","hijos":[
+    				{"tipo":"armario","hijos":[
+                { "tipo":"cofre",
+                  "hijos":[]
+                }
+              ]
+    				}
+     		]
+     },
+    {"tipo":"habitacion","hijos":[{
+				"tipo":"hole",
+				"config":"C:\\Users\\Usuario\\Documents\\VisualWorks Projects\\DesignPatterns\\SmallTalk\\Proyecto Jose\\primeraClaseTeoria\\rectangulo2HabVacio.json"
+      }
+      ]
+  	}
+],
+"bichos":[["anti",1]]
+}

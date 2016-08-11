@@ -29,6 +29,7 @@ namespace EmotionAPI_WPF_Samples
         string videoPath;
         string imagePath;
         string key = "45f9f87d2879492e8d53f659827f6e9e";
+        JSONBuilder session_results = new JSONBuilder();
 
         public Prototipo()
         {
@@ -69,6 +70,7 @@ namespace EmotionAPI_WPF_Samples
             AudioDevicesComboBox.ItemsSource = audDevices;
             VideoDevicesComboBox.SelectedIndex = 0;
             AudioDevicesComboBox.SelectedIndex = 0;
+            session_results.initializeSesion();
             
         }
 
@@ -111,13 +113,15 @@ namespace EmotionAPI_WPF_Samples
 
         private async void AnalyseFeeling_Click(object sender, RoutedEventArgs e)
         {
-            for(int i = 0; i < 3; i++)
+            session_results.initializeAnalysis();
+            Emotion[] emotionResult = null;
+            List<_Emotion> _emotionResult = null;
+            for (int i = 0; i < 3; i++)
             {
+                session_results.initializeAnalysis();
                 string image_url = "";
                 clean_Directory();
                 WebcamCtrl.TakeSnapshot();
-                Emotion[] emotionResult = null;
-                List<_Emotion> _emotionResult = null;
                 image_url = lookFor_Snap();
                 emotionResult = await lookFor_Emotions(image_url);
                 _emotionResult = adapt_To_MyEmotions(emotionResult);
@@ -126,9 +130,11 @@ namespace EmotionAPI_WPF_Samples
                 _emotionResult.Sort((em1, em2) => em2.Score.CompareTo(em1.Score));
                 //log_Emotions(emotionResult);
                 log_MyEmotions(_emotionResult);
-                results.Text += study_emotions(_emotionResult);
+                session_results.analysisResults(study_emotions(_emotionResult));
                 System.Threading.Thread.Sleep(3000);
             }
+            session_results.FinishAnalysis();
+            
         }
 
         private List<_Emotion> adapt_To_MyEmotions(Emotion[] emotionResult)
