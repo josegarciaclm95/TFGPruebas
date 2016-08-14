@@ -1,3 +1,8 @@
+****Nota importante
+===================
+
+Tras ejecutar el programa y seleccionar la fuente de video (el audio no se usa) de la que queremos leer imágenes, hay que pulsar "Start Capture" antes de iniciar el análisis, y durante el mismo, el programa tiene que estar en primer plano en todo momento (debido a la libreria empleada).
+
 Prototipo basado en Microsoft Oxford API
 ========================================
 
@@ -8,17 +13,17 @@ Algoritmo
 El grueso del prototipo recae en el método que se desencadena al hacer click en "Analyse Feelings".
 
 AnalyseFeeling_Click {
-	-Eliminar imágenes que haya en el directorio, que haya una foto como mucho en cada instante
-	-Tomar imagen
-	-Mandar a Oxford API
-	-Adaptar resultados
-	-Registrar resultados
+	* Eliminar imágenes que haya en el directorio, que haya una foto como mucho en cada instante   
+	* Tomar imagen   
+	* Mandar a Oxford API   
+	* Adaptar resultados   
+	* Registrar resultados   
 }
 
 La adaptación consiste en coger los resultados que devuelve la API (donde las emociones son propiedades del objeto devuelto) y transformarlo en objetos _Emotion.
 
 La lógica que decide como analizar las emociones se encuentra en study_emotions(), en Prototipo.xaml.cs. Según el score de la emoción mayor, se decide cual es la emoción que está mostrando el usuario.
 
--   Si la emoción mayor tiene un score mayor de 0.9, dedicidimos que esa emoción es la que se esta mostrando
--   Si es menor, entonces delegamos el estudio en la propia clase primaria, que analiza cuales son las emociones        secundarias y decide entonces que emoción constituye la combinacion de estas.
+*   Si la emoción mayor tiene un score mayor de 0.9, dedicidimos que esa emoción es la que se esta mostrando   
+*   Si es menor, entonces delegamos el estudio en la propia clase primaria, que analiza cuales son las emociones            secundarias y decide entonces que emoción constituye la combinacion de estas.
 
